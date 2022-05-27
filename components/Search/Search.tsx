@@ -20,14 +20,14 @@ export const Search = ({ className, ...props }: SearchProps): JSX.Element => {
     });
   };
 
-  const handleKeyDown = (e: KeyboardEvent) => {
+  const handleKeyDown = (e: any) => {
     if (e.key == 'Enter') {
       goToSearch();
     }
   };
 
   return (
-    <div className={classNames(className, styles.search)} {...props}>
+    <form className={classNames(className, styles.search)} {...props}>
       <Input
         placeholder="Поиск..."
         className={styles.input}
@@ -38,6 +38,6 @@ export const Search = ({ className, ...props }: SearchProps): JSX.Element => {
       <Button appearance="primary" className={styles.button} onClick={goToSearch}>
         <GlassIcon />
       </Button>
-    </div>
+    </form>
   );
 };
