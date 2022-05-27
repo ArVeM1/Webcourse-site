@@ -1,5 +1,5 @@
 .textarea {
-  width: 1139px;
+  width: 100%;
   height: 76px;
   padding: 7px 12px;
   color: var(--black);
@@ -16,4 +16,19 @@
 
 .textarea::placeholder {
   color: var(--gray);
+}
+
+.error {
+  border: 1px solid var(--red);
+}
+
+.textareaWrapper {
+  position: relative;
+}
+
+.errorMessage {
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  color: var(--red);
 }
