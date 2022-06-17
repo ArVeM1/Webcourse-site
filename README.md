@@ -1,3 +1,3 @@
-# Учебный проект на NextJS
+# Проект на NextJS
 -TypeScript
 -NextJs
